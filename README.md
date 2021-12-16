@@ -18,20 +18,20 @@ npm install
 
 ### serve with hot reload at localhost:3000
 ```bash
-$ npm run dev
+npm run dev
 ```
 
 ### build for production and launch server
 ```bash
-$ npm run build
+npm run build
 ```
 ```bash
-$ npm run start
+npm run start
 ```
 
 ### generate static project
 ```bash
-$ npm run generate
+npm run generate
 ```
 
 ## About Nuxt framework
