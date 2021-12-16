@@ -25,7 +25,7 @@ $ npm run start
 $ npm run generate
 ```
 
-## About Nuxt
+## About Nuxt framework
 
 For detailed explanation on how things work, check out the [documentation](https://nuxtjs.org).
 
@@ -78,24 +78,7 @@ More information about the usage of this directory in [the documentation](https:
 
 
 
-## Webstream examples:
-
-https://codepen.io/tom-sapletta-com/pen/xxLvmpB
-
-https://github.com/web-stream/demo
-
-
-## TODO:
-
-+ jakie Wypełnienie pod modułami ?
-+ Stopka - przykład
-+ Menu - dodać dokumentacje
-
-
-
-
-
-## [Web Stream](https://www.webstream.dev/)
+# [Web Stream](https://www.webstream.dev/)
 
 Streaming application/interface directly on frontend, without building backend side is part of [wapka ecosystem](https://docs.wapka.pl/) to build Application
 based on PaaS infrastructure as Aplication Platform as a Service or (APaaS) Function as a Service (FaaS)
@@ -104,7 +87,7 @@ WebStream is a rapid prototyping, playing and learning environment for web devel
 Extends the JavaScripts language with Stream Thinking and libraries for building asyncron, decentralized, modular applications.
 Web Stream a continuous improving by a flowing stream;
 
-Czym jest Webstream?
+## Czym jest Webstream?
 
 Web Stream Dev jest modularnym standardem ładowania mediów, umożliwiającym implementację streamowania poprzez protokół HTTP dla aplikacji oraz stron internetowych w przeglądarce oraz dedykowanych platformach.
 
@@ -141,6 +124,21 @@ and others:
 Learn More About Web Stream Dev
 
 + [about.webstream.dev](https://about.webstream.dev/)
+
+
+## Webstream examples:
+
+https://codepen.io/tom-sapletta-com/pen/xxLvmpB
+
+https://github.com/web-stream/demo
+
+
+## TODO:
+
++ jakie Wypełnienie pod modułami ?
++ Stopka - przykład
++ Menu - dodać dokumentacje
+
 
 
 
