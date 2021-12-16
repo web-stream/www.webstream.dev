@@ -1,0 +1,59 @@
+:root {
+  --webstream-light: #5bb7d0;
+  --webstream-lighter: #274b55;
+  --webstream: #132b33;
+  --webstream-dark: #032733;
+  --webstream-darker: #021921;
+  --webstream-gray: #d3d3d3;
+}
+
+* {
+  /*outline: solid 1px red;*/
+}
+body {
+  overflow: overlay;
+}
+::-webkit-scrollbar {
+  width: 9px;
+  height: 9px
+}
+::-webkit-scrollbar-button {
+  width: 0px;
+  height: 0px;
+}
+::-webkit-scrollbar-thumb {
+  background: var(--webstream-lighter);
+  border: none;
+  border-radius: 100px;
+}
+::-webkit-scrollbar-track {
+  background: transparent;
+}
+::-webkit-scrollbar-corner {
+  background: transparent;
+}
+
+.drag-none {
+  -webkit-user-drag: none;
+  -khtml-user-drag: none;
+  -moz-user-drag: none;
+  -o-user-drag: none;
+  user-drag: none;
+}
+
+.hover-trigger .hover-target {
+  display: none;
+}
+.hover-trigger:hover .hover-target {
+  display: block;
+}
+.hover-target:hover {
+  display: block;
+}
+.link-list:hover .link-title {
+  color: var(--webstream-light);
+}
+.item-title:hover {
+  color: var(--webstream-light);
+  background: var(--webstream-darker);
+}

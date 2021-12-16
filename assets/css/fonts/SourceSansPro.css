@@ -1,0 +1,35 @@
+@font-face {
+    font-family: 'Source Sans Pro';
+    font-style: normal;
+    font-weight: 200;
+    font-display: swap;
+    src: url('~assets/fonts/DMsans/SourceSansPro-ExtraLight.ttf') format('truetype');
+}
+@font-face {
+    font-family: 'Source Sans Pro';
+    font-style: normal;
+    font-weight: 300;
+    font-display: swap;
+    src: url('~assets/fonts/DMsans/SourceSansPro-Light.ttf') format('truetype');
+}
+@font-face {
+    font-family: 'Source Sans Pro';
+    font-style: normal;
+    font-weight: 400;
+    font-display: swap;
+    src: url('~assets/fonts/DMsans/SourceSansPro-Regular.ttf') format('truetype');
+}
+@font-face {
+    font-family: 'Source Sans Pro';
+    font-style: normal;
+    font-weight: 600;
+    font-display: swap;
+    src: url('~assets/fonts/DMsans/SourceSansPro-SemiBold.ttf') format('truetype');
+}
+@font-face {
+    font-family: 'Source Sans Pro';
+    font-style: normal;
+    font-weight: 700;
+    font-display: swap;
+    src: url('~assets/fonts/DMsans/SourceSansPro-Bold.ttf') format('truetype');
+}
