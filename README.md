@@ -34,6 +34,38 @@ npm run start
 npm run generate
 ```
 
+## Issues:
+
+```bash
+npm audit fix
+```
+
+
+### When I run $ npm run dev nothing happens and I get the following message:
+```
+node: --openssl-legacy-provider is not allowed in NODE_OPTIONS
+```
+### Solution
+```bash
+brew update
+brew upgrade
+```
+
+## npm
+
+### If there is still any problem please contact us and show the version of npm
+```bash
+npm -v
+```
+remove old version:
+```bash
+sudo n
+```
+update
+```bash
+sudo npm install -g npm
+```
+
 ## About Nuxt framework
 
 For detailed explanation on how things work, check out the [documentation](https://nuxtjs.org).
@@ -84,6 +116,8 @@ More information about the usage of this directory in [the documentation](https:
 This directory contains your Vuex store files. Creating a file in this directory automatically activates Vuex.
 
 More information about the usage of this directory in [the documentation](https://nuxtjs.org/docs/2.x/directory-structure/store).
+
+
 
 
 
@@ -149,7 +183,8 @@ https://github.com/web-stream/demo
 + Menu - dodać dokumentacje
 
 
-
+- 📘 Documentation: [https://docs.webstream.dev](https://docs.webstream.dev)
+- 👥 Community: [GitHub discussions](https://github.com/web-stream/docs/discussions)
 
 
 ---
