@@ -6,22 +6,31 @@
 
 ---
 
-# WebStream
+# [Web Stream Dev](https://www.webstream.dev/)
 
 ## Build Setup
 
+
+### install dependencies
 ```bash
-# install dependencies
-$ npm install
+npm install
+```
 
-# serve with hot reload at localhost:3000
+### serve with hot reload at localhost:3000
+```bash
 $ npm run dev
+```
 
-# build for production and launch server
+### build for production and launch server
+```bash
 $ npm run build
+```
+```bash
 $ npm run start
+```
 
-# generate static project
+### generate static project
+```bash
 $ npm run generate
 ```
 
@@ -78,7 +87,7 @@ More information about the usage of this directory in [the documentation](https:
 
 
 
-# [Web Stream](https://www.webstream.dev/)
+# [About Web Stream Dev](https://www.webstream.dev/)
 
 Streaming application/interface directly on frontend, without building backend side is part of [wapka ecosystem](https://docs.wapka.pl/) to build Application
 based on PaaS infrastructure as Aplication Platform as a Service or (APaaS) Function as a Service (FaaS)
