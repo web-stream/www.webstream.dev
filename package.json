@@ -13,6 +13,7 @@
     "@nuxtjs/composition-api": "*",
     "animate.css": "*",
     "core-js": "*",
+    "marked": "^4.0.7",
     "nuxt": "*",
     "prismjs": "*",
     "tailwind-colors": "*",
