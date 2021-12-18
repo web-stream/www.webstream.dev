@@ -1,6 +1,6 @@
 {
-    "name": "webstream",
-    "title": "webstream",
+    "name": "webstream.dev",
+    "title": "Web Stream",
     "description": "webstream() function & webstream class are downloading data or files by http request",
     "version": "{{VER}}",
     "keywords": [

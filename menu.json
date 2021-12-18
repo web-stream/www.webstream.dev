@@ -8,8 +8,8 @@
           "subtitle": "Selection of website built with WebStream",
           "slug": "showcases",
           "to": "/showcases",
-          "md_remote": "https://showcases.webstream.dev/README.md",
-          "md_local": "showcases.md",
+          "remote": "https://web-stream.github.io/showcases/README.md",
+          "md": "showcases.md",
           "html": "showcases.html",
           "icon": "showcases.svg",
           "color": "bg-sand"
@@ -19,8 +19,8 @@
           "subtitle": "How companies use Webstream",
           "slug": "case-studies",
           "to": "/case-studies",
-          "md_remote": "https://case-studies.webstream.dev/README.md",
-          "md_local": "case-studies.md",
+          "remote": "https://web-stream.github.io/case-studies/README.md",
+          "md": "case-studies.md",
           "html": "case-studies.html",
           "icon": "case-studies.svg",
           "color": "bg-sand-darker"
@@ -30,7 +30,8 @@
           "subtitle": "What they think about us",
           "slug": "testimonials",
           "to": "/testimonials",
-          "md": "testimonials.webstream.dev",
+          "remote": "https://web-stream.github.io/testimonials/README.md",
+          "md": "testimonials.md",
           "html": "testimonials.html",
           "icon": "testimonials.svg",
           "color": "bg-sand-darkerer"
@@ -45,7 +46,9 @@
           "subtitle": "Create fast websites easily",
           "slug": "docs",
           "to": "/docs",
-          "md": "docs.webstream.dev",
+          "remote": "https://testimonials.github.io/testimonials/README.md",
+          "md": "docs.md",
+          "html": "docs.html",
           "icon": "docs.svg",
           "color": "bg-green-500"
         },
@@ -54,7 +57,9 @@
           "subtitle": "Understand everything in Webstream",
           "slug": "examples",
           "to": "/examples",
-          "md": "https://web-stream.github.io/examples/README.md",
+          "remote": "https://web-stream.github.io/examples/README.md",
+          "md": "examples.md",
+          "html": "examples.html",
           "icon": "examples.svg",
           "color": "bg-green-600"
         },
