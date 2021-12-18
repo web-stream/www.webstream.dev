@@ -6,11 +6,14 @@
     "keywords": [
         "webstream", "stream", "get", "request", "http"
     ],
-    "author": {
-        "name": "Tom Sapletta",
-        "email": "info@softreck.dev",
-        "url": "http://softreck.dev"
-    },
+    "author": [{
+          "name": "Tom Sapletta",
+          "email": "info@softreck.dev",
+          "url": "http://softreck.dev"
+      },
+      {
+          "name": "Michał Lustyk"
+    }],
     "homepage": "https://www.webstream.dev/",
     "bugs": "https://github.com/web-stream/www.webstream.dev/issues",
     "demo": "http://demo.webstream.dev/",
