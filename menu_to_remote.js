@@ -1,5 +1,7 @@
 const fs = require('fs');
 const https = require('https');
+const marked = require('marked');
+//import { marked } from 'marked';
 
 fs.readFile('./menu.json', 'utf8', (err, data) => {
   let list = '';
@@ -24,27 +26,59 @@ fs.readFile('./menu.json', 'utf8', (err, data) => {
           // Download the file
           https.get(url, (res) => {
 
-            // Open file in local filesystem
-            const file = fs.createWriteStream('md/' + filename);
+            var { statusCode } = res;
+            var contentType = res.headers['content-type'];
 
-            var marked = require('marked');
-            console.log(marked(res));
-            console.log(marked('#hello world of mark down!'));
+            let error;
+/*
+            if (statusCode !== 200) {
+              error = new Error('Request Failed.\n' +
+                `Status Code: ${statusCode}`);
+            } else if (!/^application\/json/.test(contentType)) {
+              error = new Error('Invalid content-type.\n' +
+                `Expected application/json but received ${contentType}`);
+            }
+*/
+            if (error) {
+              console.error(error.message);
+              // consume response data to free up memory
+              res.resume();
+            }
 
-            // Write data into local file
-            res.pipe(file);
+            res.setEncoding('utf8');
+            let rawData = '';
 
-            // Close the file
-            file.on('finish', () => {
-              file.close();
-              console.log("File downloaded!" + url);
+            res.on('data', (chunk) => {
+              rawData += chunk;
+
+              // HTML
+              // Open file in local filesystem
+              const html_file = './static/html/' + filename + '.html';
+              // render markdown to html file
+              let html = marked.parse(rawData);
+              // Write data into local file
+              fs.writeFile(html_file, html, function (err) {
+                if (err) throw err;
+                console.log("File saved!" + html_file);
+              });
+
             });
+
+            // MARKDOWN
+            // Open file in local filesystem
+            const md_file = fs.createWriteStream('md/' + filename);
+            // Write data into local file
+            res.pipe(md_file);
+            // Close the file
+            md_file.on('finish', () => {
+              md_file.close();
+              console.log("File MD saved!" + url);
+            });
+
 
           }).on("error", (err) => {
             console.log("Error: ", err.message);
           });
-
-
         }
         //console.log(`${db.linkList}: ${db.type}`);
       });

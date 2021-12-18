@@ -10,7 +10,7 @@
           "to": "/showcases",
           "remote": "https://web-stream.github.io/showcases/README.md",
           "md": "showcases.md",
-          "html": "showcases.html",
+          "html": "showcases.md.html",
           "icon": "showcases.svg",
           "color": "bg-sand"
         },
@@ -21,7 +21,7 @@
           "to": "/case-studies",
           "remote": "https://web-stream.github.io/case-studies/README.md",
           "md": "case-studies.md",
-          "html": "case-studies.html",
+          "html": "case-studies.md.html",
           "icon": "case-studies.svg",
           "color": "bg-sand-darker"
         },
@@ -32,7 +32,7 @@
           "to": "/testimonials",
           "remote": "https://web-stream.github.io/testimonials/README.md",
           "md": "testimonials.md",
-          "html": "testimonials.html",
+          "html": "testimonials.md.html",
           "icon": "testimonials.svg",
           "color": "bg-sand-darkerer"
         }
@@ -46,9 +46,9 @@
           "subtitle": "Create fast websites easily",
           "slug": "docs",
           "to": "/docs",
-          "remote": "https://testimonials.github.io/testimonials/README.md",
+          "remote": "https://web-stream.github.io/docs/README.md",
           "md": "docs.md",
-          "html": "docs.html",
+          "html": "docs.md.html",
           "icon": "docs.svg",
           "color": "bg-green-500"
         },
@@ -59,7 +59,7 @@
           "to": "/examples",
           "remote": "https://web-stream.github.io/examples/README.md",
           "md": "examples.md",
-          "html": "examples.html",
+          "html": "examples.md.html",
           "icon": "examples.svg",
           "color": "bg-green-600"
         },
@@ -68,14 +68,18 @@
           "subtitle": "Learn with concrete cases",
           "slug": "tutorials",
           "to": "/tutorials",
-          "md": "tutorials.webstream.dev",
+          "remote": "https://web-stream.github.io/examples/README.md",
+          "md": "tutorials.md",
+          "html": "tutorials.md.html",
           "icon": "tutorials.svg",
           "color": "bg-green-700"
         },
         {
           "title": "Master courses",
           "subtitle": "Learn more with experts",
-          "href": "https://courses.webstream.dev",
+          "remote": "https://web-stream.github.io/courses/README.md",
+          "md": "courses.md",
+          "html": "courses.md.html",
           "icon": "master-courses.svg",
           "color": "bg-green-800"
         }
@@ -89,7 +93,9 @@
           "subtitle": "How to Deploy WebStream",
           "slug": "deployments",
           "to": "/deployments",
-          "md": "deployments.webstream.dev",
+          "remote": "https://web-stream.github.io/deployments/README.md",
+          "md": "deployments.md",
+          "html": "deployments.md.html",
           "icon": "deployments.svg",
           "color": "bg-indigo-light"
         },
@@ -98,7 +104,9 @@
           "subtitle": "Extend the power of Webstream",
           "slug": "modules",
           "to": "/modules",
-          "md": "modules.webstream.dev",
+          "remote": "https://web-stream.github.io/modules/README.md",
+          "md": "modules.md",
+          "html": "modules.md.html",
           "icon": "modules.svg",
           "color": "bg-indigo"
         },

@@ -42,6 +42,12 @@ npm audit fix
 ```
 
 
+### install markdown
+https://marked.js.org/
+```bash
+npm install marked --save
+```
+
 ### When I run $ npm run dev nothing happens and I get the following message:
 ```
 node: --openssl-legacy-provider is not allowed in NODE_OPTIONS

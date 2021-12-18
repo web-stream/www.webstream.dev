@@ -15,6 +15,7 @@
     "@nuxtjs/composition-api": "^0.31.0",
     "animate.css": "*",
     "core-js": "*",
+    "marked": "^4.0.7",
     "nuxt": "*",
     "prismjs": "*",
     "tailwind-colors": "*",
