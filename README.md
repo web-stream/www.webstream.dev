@@ -71,6 +71,13 @@ nuxt.config.js
 https://codesandbox.io/s/nuxtcontent-demo-l164h?
 
 
+# npm
+npm i @nuxtjs/i18n
+
+https://github.com/nuxt-community/i18n-module
+https://i18n.nuxtjs.org/basic-usage/
+
+
 ## Vue Plugins
 
 If we want to use Vue plugins, like [v-tooltip](https://akryum.github.io/v-tooltip) to display tooltips in your application, we need to setup the plugin before launching the app.

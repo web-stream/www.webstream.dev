@@ -27,10 +27,8 @@ export default {
     '~/plugins/mq',
     '~/plugins/gtag.client',
     '~/plugins/adblock.client',
-    '~/plugins/clipboard.client',
     '~/plugins/v-tooltip.ts',
     '~/plugins/showcases',
-    '~/plugins/nav',
     '~/plugins/timer'
   ],
 
@@ -51,9 +49,32 @@ export default {
   modules: [
     '@nuxtjs/axios',
     '@nuxt/http',
-    "@nuxt/content"
-  ],
+    '@nuxt/content',
 
+  ],
+  i18n: {
+    langDir: 'i18n/',
+    locales: [
+      {
+        code: 'en',
+        iso: 'en-US',
+        file: 'en-US.js',
+        name: 'English'
+      },
+      {
+        code: 'fr',
+        iso: 'fr-FR',
+        file: 'fr-FR.js',
+        name: 'Français'
+      },
+      {
+        code: 'ja',
+        iso: 'ja-JP',
+        file: 'ja-JP.js',
+        name: '日本語'
+      }
+    ]
+  },
   // Build Configuration: https://go.nuxtjs.dev/config-build
   build: {
   }

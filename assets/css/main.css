@@ -61,11 +61,42 @@ body {
   color: white;
 }
 
+footer > div,
+footer > div > div {
+  background: var(--webstream-darker);
+}
+
+body {
+  background: var(--webstream-darker);
+}
+
 
 button:focus-visible, div:focus-visible, a:focus-visible {
   /* remove default focus style */
   outline: none;
   /* custom focus style */
   border-radius: 2px;
-  box-shadow: 0 0 0 2px #00DC82;
+  box-shadow: 0 0 0 2px var(--webstream-light);
 }
+
+/* MARKDOWN */
+
+.nuxt-content h1 {
+  font-weight: normal;
+  font-size: 32px;
+  color: var(--webstream-light);
+}
+.nuxt-content h2 {
+  font-weight: normale;
+  font-size: 26px;
+}
+.nuxt-content h3 {
+  font-weight: bold;
+  font-size: 22px;
+}
+.nuxt-content p {
+  margin-bottom: 20px;
+}
+
+
+

@@ -6,7 +6,6 @@
       text-white
       font-SourceSansPro
       relative
-      overflow-hidden
       bg-webstream
     "
   >
