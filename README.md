@@ -48,6 +48,10 @@ https://marked.js.org/
 npm install marked --save
 ```
 
+
+npm install @nuxt/http
+
+
 ### When I run $ npm run dev nothing happens and I get the following message:
 ```
 node: --openssl-legacy-provider is not allowed in NODE_OPTIONS

@@ -6,15 +6,14 @@
     />
     <AppHeader :links="linkList"/>
     <AppBlurBackgroundMenu :links="linkList" />
-    <SectionLanding />
 
-    <div class="float-left font-SourceSansPro bg-white w-full" style="color: black">
-      <SectionEditor />
-    </div>
+    <SectionArticle />
 
     <div class="float-left font-SourceSansPro bg-white w-full" style="color: black">
       <SectionContent />
     </div>
+
+    <SectionFooter />
 
   </div>
 </template>

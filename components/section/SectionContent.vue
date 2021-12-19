@@ -4,9 +4,10 @@
       <client-only placeholder="Loading an example...">
         <div className="h-full">
           <span>CONTENT</span>
-           <div>
-             {{codeToRender}}
-           </div>
+          <div>
+            <h1>{ post.title }}</h1>
+            <p>{ post.description }}</p>
+          </div>
         </div>
       </client-only>
     </div>
@@ -19,10 +20,11 @@
 
 <script>
 export default {
-  data() {
-    return {
-      codeToRender: "TEST",
-    };
+  async asyncData({ params, $http }) {
+    //const { slug } = route.params
+    const post = await $http.$get(`https://api.nuxtjs.dev/posts/${params.id}`)
+    return { post }
   }
-};
+}
 </script>
+
