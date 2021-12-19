@@ -48,8 +48,51 @@ https://marked.js.org/
 npm install marked --save
 ```
 
-
+```bash [NPM]
 npm install @nuxt/http
+```
+
+
+```bash [NPM]
+npm install --save @docsearch/css @docsearch/js
+```
+
+```bash [NPM]
+npm install --save vue-mq
+```
+
+```bash [NPM]
+npm install --save @nuxt/content
+```
+nuxt.config.js
+
+    modules: ["@nuxt/content"],
+
+https://codesandbox.io/s/nuxtcontent-demo-l164h?
+
+
+## Vue Plugins
+
+If we want to use Vue plugins, like [v-tooltip](https://akryum.github.io/v-tooltip) to display tooltips in your application, we need to setup the plugin before launching the app.
+
+First we need to install it
+
+::code-group
+```bash [Yarn]
+yarn add v-tooltip
+```
+```bash [NPM]
+npm install v-tooltip
+```
+
+Then we create the file `plugins/vue-tooltip.js`
+
+```js{}[plugins/vue-tooltip.js]
+import Vue from 'vue'
+import VTooltip from 'v-tooltip'
+
+Vue.use(VTooltip)
+```
 
 
 ### When I run $ npm run dev nothing happens and I get the following message:
@@ -76,6 +119,23 @@ update
 ```bash
 sudo npm install -g npm
 ```
+
+---
+## Python
+
+```bash
+pip install markdown-to-json
+```
+OR
+```bash
+git clone https://github.com/njvack/markdown-to-json.git
+cd markdown_to_json
+./setup.py install
+```
+
+```bash
+py markdown-to-json/markdown_to_json/scripts/md_to_json.py -o ./static/md/docs.json ./static/md/docs.md
+````
 
 ## About Nuxt framework
 

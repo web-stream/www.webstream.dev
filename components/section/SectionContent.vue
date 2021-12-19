@@ -5,8 +5,10 @@
         <div className="h-full">
           <span>CONTENT</span>
           <div>
-            <h1>{ post.title }}</h1>
-            <p>{ post.description }}</p>
+            <span>{{ slug }}</span>
+            <hr>
+            <h1>{{ title }}</h1>
+            <p>{{ content }}</p>
           </div>
         </div>
       </client-only>
@@ -19,12 +21,40 @@
 </style>
 
 <script>
+import axios from "axios";
+
 export default {
-  async asyncData({ params, $http }) {
-    //const { slug } = route.params
-    const post = await $http.$get(`https://api.nuxtjs.dev/posts/${params.id}`)
-    return { post }
+  data() {
+    return {
+      title: 'title',
+      content: 'content',
+      slug: 'slug',
+      prev: 'prev',
+      next: 'next'
+    }
+  },
+
+  async fetch(params) {
+    const { slug } = route.params
+    const { idp } = params.id
+
+    // `todos` has to be declared in data()
+    this.slug = idp
   }
+  /*
+  async asyncData({ params, $http, route }) {
+    const { slug } = route.params
+    const { idp } = params.id
+    //const post = await $http.$get(`http://localhost:3000/html/${idp}.md.html`)
+    const post = await $http.$get(`http://localhost:3000/html/case-studies.md.html`)
+    return {
+      content: 'post',
+      title: params.id,
+      slug: slug
+    }
+  }
+
+   */
 }
 </script>
 

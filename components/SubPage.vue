@@ -7,11 +7,25 @@
     <AppHeader :links="linkList"/>
     <AppBlurBackgroundMenu :links="linkList" />
 
-    <SectionArticle />
 
     <div class="float-left font-SourceSansPro bg-white w-full" style="color: black">
-      <SectionContent />
+
+      <NuxtLink to="/">Home page</NuxtLink>
+
+
+      <div>
+        <h1>Home page</h1>
+        <NuxtLink to="/about" prefetch>About page pre-fetched</NuxtLink>
+
+
+        <NuxtLink to="/about"
+        >About (internal link that belongs to the Nuxt App)</NuxtLink
+        >
+        <a href="https://nuxtjs.org">External Link to another page</a>
+      </div>
+
     </div>
+
 
     <SectionFooter />
 

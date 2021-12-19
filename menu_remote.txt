@@ -7,3 +7,10 @@ https://web-stream.github.io/examples/README.md
 https://web-stream.github.io/courses/README.md
 https://web-stream.github.io/deployments/README.md
 https://web-stream.github.io/modules/README.md
+https://web-stream.github.io/video-courses/README.md
+https://web-stream.github.io/video-courses/README.md
+https://web-stream.github.io/team/README.md
+https://web-stream.github.io/events/README.md
+https://web-stream.github.io/releases/README.md
+https://web-stream.github.io/sponsors/README.md
+https://web-stream.github.io/tweets/README.md

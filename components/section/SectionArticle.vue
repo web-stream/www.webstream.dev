@@ -23,11 +23,13 @@
     <div class="container mx-auto">
       {{ content }}
     </div>
-
+    <hr>
     <prev-next :prev="prev" :next="next" />
+    <hr>
   </section>
 </template>
 <script>
+
 import axios from 'axios'
 
 export default {
@@ -35,6 +37,7 @@ export default {
     // Using package name
     '@nuxtjs/axios',
   ],
+
   data() {
     return {
       title: 'route.path',
@@ -43,26 +46,39 @@ export default {
       next: 'next'
     }
   },
+
   async fetch() {
     const {data} = await axios.get(
-      "http://localhost:3000/html{{$route.path}}.md.html"
+      "http://localhost:3000/html/docs.md.html"
     )
     // `todos` has to be declared in data()
     this.content = data
   }
+
 }
-  /*
-  async asyncData(context) {
 
-    const data = await context.$axios.$get(
-      `/html/docs.md.html`
-    )
 
+/*
+export default {
+  data() {
     return {
-      title: 'title',
+      title: 'route.path',
       content: 'article.content',
       prev: 'prev',
       next: 'next'
+    }
+  },
+   async asyncData(context) {
+
+   // const data = await context.$axios.$get(
+    //  `/html/docs.md.html`
+   // )
+
+    return {
+      title: 'title1',
+      content: 'article.content1',
+      prev: 'prev1',
+      next: 'next2'
     }
   }
 }

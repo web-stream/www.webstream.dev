@@ -24,6 +24,14 @@ export default {
 
   // Plugins to run before rendering page: https://go.nuxtjs.dev/config-plugins
   plugins: [
+    '~/plugins/mq',
+    '~/plugins/gtag.client',
+    '~/plugins/adblock.client',
+    '~/plugins/clipboard.client',
+    '~/plugins/v-tooltip.ts',
+    '~/plugins/showcases',
+    '~/plugins/nav',
+    '~/plugins/timer'
   ],
 
   // Auto import components: https://go.nuxtjs.dev/config-components
@@ -42,7 +50,8 @@ export default {
   // Modules: https://go.nuxtjs.dev/config-modules
   modules: [
     '@nuxtjs/axios',
-    '@nuxt/http'
+    '@nuxt/http',
+    "@nuxt/content"
   ],
 
   // Build Configuration: https://go.nuxtjs.dev/config-build

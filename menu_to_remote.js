@@ -21,7 +21,9 @@ fs.readFile('./menu.json', 'utf8', (err, data) => {
           //console.log(menu.remote);
           list += menu.remote + "\n";
           let url = menu.remote;
-          let filename = menu.md;
+          let target_md = './static/md/' + menu.md;
+          let target_html = './static/html/' + menu.html;
+          let target_json = './static/json/' + menu.md + '.json'
 
           // Download the file
           https.get(url, (res) => {
@@ -48,25 +50,32 @@ fs.readFile('./menu.json', 'utf8', (err, data) => {
             res.setEncoding('utf8');
             let rawData = '';
 
+            // HTML JSON
             res.on('data', (chunk) => {
-              rawData += chunk;
-
               // HTML
-              // Open file in local filesystem
-              const html_file = './static/html/' + filename + '.html';
+              rawData += chunk;
               // render markdown to html file
               let html = marked.parse(rawData);
               // Write data into local file
-              fs.writeFile(html_file, html, function (err) {
+              fs.writeFile(target_html, html, function (err) {
                 if (err) throw err;
-                console.log("File saved!" + html_file);
+                console.log("File saved!" + target_html);
+              });
+
+              // JSON
+              // render markdown to html file
+              let json = marked.parse(rawData);
+              // Write data into local file
+              fs.writeFile(target_json, json, function (err) {
+                if (err) throw err;
+                console.log("File saved!" + target_json);
               });
 
             });
 
             // MARKDOWN
             // Open file in local filesystem
-            const md_file = fs.createWriteStream('md/' + filename);
+            const md_file = fs.createWriteStream(target_md);
             // Write data into local file
             res.pipe(md_file);
             // Close the file

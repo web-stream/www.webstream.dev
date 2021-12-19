@@ -1,5 +1,12 @@
 {
   "compilerOptions": {
+    "baseUrl": ".",
+    "rootDir": ".",
+    "paths": {
+      "~/*": ["./*"],
+      "@/*": ["./*"]
+    },
+    "outDir": "./dist",
     "target": "ES2018",
     "module": "ESNext",
     "moduleResolution": "Node",
@@ -10,12 +17,7 @@
     "strict": true,
     "noEmit": true,
     "experimentalDecorators": true,
-    "baseUrl": ".",
-    "paths": {
-      "~/*": ["./*"],
-      "@/*": ["./*"]
-    },
-    "types": ["@nuxt/types", "@types/node", "@nuxt/types", "@nuxtjs/axios"]
+    "types": ["@nuxt/types", "@types/node", "@nuxtjs/axios"]
   },
   "exclude": ["node_modules", ".nuxt", "dist"]
 }

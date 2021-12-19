@@ -45,7 +45,7 @@
           "title": "Docs",
           "subtitle": "Create fast websites easily",
           "slug": "docs",
-          "to": "/docs",
+          "to": "/learn/docs",
           "remote": "https://web-stream.github.io/docs/README.md",
           "md": "docs.md",
           "html": "docs.md.html",
@@ -56,7 +56,7 @@
           "title": "Examples",
           "subtitle": "Understand everything in Webstream",
           "slug": "examples",
-          "to": "/examples",
+          "to": "/learn/examples",
           "remote": "https://web-stream.github.io/examples/README.md",
           "md": "examples.md",
           "html": "examples.md.html",
@@ -67,7 +67,7 @@
           "title": "Tutorials",
           "subtitle": "Learn with concrete cases",
           "slug": "tutorials",
-          "to": "/tutorials",
+          "to": "/learn/tutorials",
           "remote": "https://web-stream.github.io/examples/README.md",
           "md": "tutorials.md",
           "html": "tutorials.md.html",
@@ -77,16 +77,29 @@
         {
           "title": "Master courses",
           "subtitle": "Learn more with experts",
+          "slug": "courses",
+          "to": "/learn/courses",
           "remote": "https://web-stream.github.io/courses/README.md",
           "md": "courses.md",
           "html": "courses.md.html",
           "icon": "master-courses.svg",
           "color": "bg-green-800"
+        },
+        {
+          "title": "Video Courses",
+          "subtitle": "Learn step by step",
+          "slug": "video-courses",
+          "to": "/learn/video-courses",
+          "remote": "https://web-stream.github.io/video-courses/README.md",
+          "md": "courses.md",
+          "html": "courses.md.html",
+          "icon": "video-courses.svg",
+          "color": "bg-indigo-darkerer"
         }
       ]
     },
     {
-      "title": "Explore",
+      "title": "Contribution",
       "items": [
         {
           "title": "Deployments",
@@ -109,19 +122,9 @@
           "html": "modules.md.html",
           "icon": "modules.svg",
           "color": "bg-indigo"
-        },
-
-        {
-          "title": "Video Courses",
-          "subtitle": "Learn step by step",
-          "slug": "video-courses",
-          "to": "/video-courses",
-          "remote": "https://web-stream.github.io/video-courses/README.md",
-          "md": "courses.md",
-          "html": "courses.md.html",
-          "icon": "video-courses.svg",
-          "color": "bg-indigo-darkerer"
         }
+
+
       ]
     },
     {
@@ -131,7 +134,7 @@
           "title": "Announcements",
           "subtitle": "Last news about Webstream",
           "slug": "announcements",
-          "to": "/announcements",
+          "to": "/community/announcements",
           "remote": "https://web-stream.github.io/video-courses/README.md",
           "md": "announcements.md",
           "html": "announcements.md.html",
@@ -142,7 +145,7 @@
           "title": "Team",
           "subtitle": "They are Webstream",
           "slug": "team",
-          "to": "/team",
+          "to": "/community/team",
           "remote": "https://web-stream.github.io/team/README.md",
           "md": "team.md",
           "html": "team.md.html",
@@ -153,7 +156,7 @@
           "title": "Events",
           "subtitle": "When and where we gonna be",
           "slug": "events",
-          "to": "/events",
+          "to": "/community/events",
           "remote": "https://web-stream.github.io/events/README.md",
           "md": "events.md",
           "html": "events.md.html",
@@ -164,24 +167,14 @@
           "title": "Releases",
           "subtitle": "All the code we released",
           "slug": "releases",
-          "to": "/releases",
+          "to": "/community/releases",
           "remote": "https://web-stream.github.io/releases/README.md",
           "md": "releases.md",
           "html": "releases.md.html",
           "icon": "releases.svg",
           "color": "bg-mint"
         },
-        {
-          "title": "Sponsors",
-          "subtitle": "They trust us",
-          "slug": "sponsors",
-          "to": "/sponsors",
-          "remote": "https://web-stream.github.io/sponsors/README.md",
-          "md": "sponsors.md",
-          "html": "sponsors.md.html",
-          "icon": "sponsors.svg",
-          "color": "bg-mint-darker"
-        },
+
         {
           "title": "Tweets",
           "subtitle": "They talk about us",
@@ -201,6 +194,17 @@
       "remote": "https://web-stream.github.io/partnership/README.md",
       "md": "partnership.md",
       "html": "partnership.md.html"
+    },
+    {
+      "title": "Sponsors",
+      "subtitle": "They trust us",
+      "slug": "sponsors",
+      "to": "/community/sponsors",
+      "remote": "https://web-stream.github.io/sponsors/README.md",
+      "md": "sponsors.md",
+      "html": "sponsors.md.html",
+      "icon": "sponsors.svg",
+      "color": "bg-mint-darker"
     }
   ]
 }
