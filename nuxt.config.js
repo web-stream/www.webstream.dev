@@ -52,30 +52,9 @@ export default {
     '@nuxt/content',
 
   ],
-  i18n: {
-    langDir: 'i18n/',
-    locales: [
-      {
-        code: 'en',
-        iso: 'en-US',
-        file: 'en-US.js',
-        name: 'English'
-      },
-      {
-        code: 'fr',
-        iso: 'fr-FR',
-        file: 'fr-FR.js',
-        name: 'Français'
-      },
-      {
-        code: 'ja',
-        iso: 'ja-JP',
-        file: 'ja-JP.js',
-        name: '日本語'
-      }
-    ]
-  },
+
   // Build Configuration: https://go.nuxtjs.dev/config-build
   build: {
-  }
+  },
+  target: 'static' // default is 'server'
 }

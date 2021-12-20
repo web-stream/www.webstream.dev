@@ -1,12 +1,5 @@
 {
   "compilerOptions": {
-    "baseUrl": ".",
-    "rootDir": ".",
-    "paths": {
-      "~/*": ["./*"],
-      "@/*": ["./*"]
-    },
-    "outDir": "./dist",
     "target": "ES2018",
     "module": "ESNext",
     "moduleResolution": "Node",
